@@ -1,37 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'comic sans MS';
 }
 
-/* .banner {
-    background-image: url('imagens/boomer.png');
-    background-size: contain;
-    width: 1600px;
-    height: 250px;
-} */
+.banner {
+    background-color: red;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 .banner_title {
-    position: sticky;
-    top: 0;
-    width: 100%; 
-    z-index: 1; 
-    padding-bottom: 404
-    1px;
-    background-color: red;
+    margin: 0 auto;
+    background-color: aqua;
+    width:  fit-content;
 }
 
-.banner_title h1 {
-    display: flex;
-    align-items: center;
+h1 {
+    font-family: 'comic sans MS';
+}
+
+.flex {
+    display:flex;
     justify-content: center;
-
+    margin-bottom: 20px;
 }
 
-.adding_input {
 
+.adding_input input {
+    width: 500px;
+    margin-right: 20px;
 }
+
+.areatexto {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.backgroundbox {
+    background-color: yellow;
+    width: 50%;
+    height: fit-content;
+}
+
+.activitieslist {
+    background-color: green;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
 
 
 
