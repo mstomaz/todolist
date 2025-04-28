@@ -2,3 +2,34 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: 
+        "header";
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "add-todo";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+#title {
+    grid-area: title;
+}
+
+#todo-input {
+    grid-area: add-todo;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
