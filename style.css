@@ -1,35 +1,63 @@
+:root {
+    --background-primary: #FFFFC2;
+    --background-secundary: #FFFFFF;
+    --todos-outer-container-pri: #6E4B28;
+    --todos-outer-container-sec: #A47128;
+    --todo-background: #D2B48C;
+    --todos-outer-border: #D4AF37;
+}
+
 html {
     min-height: 100%;
 }
 
 body {
-    background: linear-gradient(#FFFFC2, #FFFFFF);
+    background: linear-gradient(var(--background-primary), var(--background-secundary));
 }
 
 main {
     margin-top: 10%;
-}
-
-header {
     display: grid;
-    grid-template-areas: 
+    grid-template-rows: repeat(2, 1fr), 4fr;
+    grid-template-areas:
         "title"
-        "add-todo";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 30px;
-}
-
-#title {
-    grid-area: title;
-    justify-content: center;
-}
-
-#todo-input {
-    grid-area: add-todo;
-    justify-content: center;
+        "input"
+        "todos";
+    gap: 10px;
+    max-width: 80%;
 }
 
 .flex-container {
     display: flex;
+}
+
+.centered {
+    justify-content: center;
+}
+
+header {
+    grid-area: title;
+}
+
+#todo-input {
+    grid-area: input;
+}
+
+#todos-outer {
+    grid-area: todos;
+    min-height: 50vh;
+    min-width: 80vw;
+    max-width: 80vw;
+    background: linear-gradient(0.25turn, var(--todos-outer-container-pri), var(--todos-outer-container-sec));
+    flex-wrap: wrap;
+    border: 10px solid var(--todos-outer-border);
+    border-radius: 50px;
+}
+
+.todo {
+    margin: 20px;
+    height: max-content;
+    width: 100%;
+    background-color: var(--todo-background);
+    border-radius: 3px;
 }
