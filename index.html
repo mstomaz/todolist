@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afazeres</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
@@ -19,16 +19,15 @@
         </header>
         <div id="todo-input" class="flex-container centered">
             <form action="">
-                <input type="text" placeholder="Adicione uma atividade...">
-                <button type="submit">Adicionar</button>
+                <input type="text" id="input-content" placeholder="Adicione uma atividade...">
+                <button type="submit" id="todo-submit">Adicionar</button>
             </form>
         </div>
         <div id="todos-outer" class="flex-container">
-            <div class="todo">
-            </div>
         </div>
     </main>
     </div>
+    <script src="src/scripts/main.js" type="module"></script>
 </body>
 
 </html>
