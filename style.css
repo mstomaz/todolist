@@ -1,12 +1,16 @@
+html {
+    min-height: 100%;
+}
+
 body {
+    background: linear-gradient(#FFFFC2, #FFFFFF);
+}
+
+main {
     margin-top: 10%;
-    display: grid;
-    grid-template-areas: 
-        "header";
 }
 
 header {
-    grid-area: header;
     display: grid;
     grid-template-areas: 
         "title"
@@ -18,13 +22,14 @@ header {
 
 #title {
     grid-area: title;
+    justify-content: center;
 }
 
 #todo-input {
     grid-area: add-todo;
+    justify-content: center;
 }
 
 .flex-container {
     display: flex;
-    justify-content: center;
 }
